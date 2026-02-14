@@ -1,8 +1,8 @@
 class Updater < Formula
   desc "macOS app update manager — check and update apps from Sparkle, Homebrew, MAS, and GitHub"
   homepage "https://github.com/lu-zhengda/updater"
-  url "https://github.com/lu-zhengda/updater/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "81d552790b06945206f71053dd5a81d461031ae2f561ae07cd47c876913394ab"
+  url "https://github.com/lu-zhengda/updater/archive/refs/tags/v0.1.0.tar.gz"
+  sha256 "456e4f6078fefca2a0d975de0a5ae0b5c8b970e4dd60316fe33aff1d5f1096ec"
   license "MIT"
 
   depends_on "go" => :build
