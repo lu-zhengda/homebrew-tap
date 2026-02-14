@@ -5,21 +5,21 @@
 class Tidymac < Formula
   desc "A lightweight macOS cleanup tool"
   homepage "https://github.com/lu-zhengda/tidymac"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/lu-zhengda/tidymac/releases/download/v0.0.1/tidymac_0.0.1_darwin_amd64.tar.gz"
-    sha256 "aab2e6f5e9cfbfd50de006bf33d0e9d983686e500302f9d1188a175c87541b84"
+    url "https://github.com/lu-zhengda/tidymac/releases/download/v0.0.2/tidymac_0.0.2_darwin_amd64.tar.gz"
+    sha256 "6c8d84aa6f37afc851f450fd263b22f8cfe74707c98f7a43bce171d43fd2bb74"
 
     def install
       bin.install "tidymac"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/lu-zhengda/tidymac/releases/download/v0.0.1/tidymac_0.0.1_darwin_arm64.tar.gz"
-    sha256 "8f87c086e7b51bba5ca3047a4085418be263f39ad12270acab13e846e03edb63"
+    url "https://github.com/lu-zhengda/tidymac/releases/download/v0.0.2/tidymac_0.0.2_darwin_arm64.tar.gz"
+    sha256 "c94d72a017360f06e62dff76e0be7117b7f62fe26617a49f5a54213a2a49d33f"
 
     def install
       bin.install "tidymac"
