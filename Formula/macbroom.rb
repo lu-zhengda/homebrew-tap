@@ -5,21 +5,21 @@
 class Macbroom < Formula
   desc "A lightweight macOS cleanup tool"
   homepage "https://github.com/lu-zhengda/macbroom"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/lu-zhengda/macbroom/releases/download/v0.1.3/macbroom_0.1.3_darwin_amd64.tar.gz"
-    sha256 "2d907445e110955f52ec4b9945b0c503440a0c59be6dc5e551c387d8c2e64b1f"
+    url "https://github.com/lu-zhengda/macbroom/releases/download/v0.1.4/macbroom_0.1.4_darwin_amd64.tar.gz"
+    sha256 "2b1fbb9f6a89bd982198e4ddb27e07da998d3b0800521fad0b20d3321cf3fcd9"
 
     def install
       bin.install "macbroom"
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/lu-zhengda/macbroom/releases/download/v0.1.3/macbroom_0.1.3_darwin_arm64.tar.gz"
-    sha256 "c24c83803e1163b885ccaa14d1be6f94da5d50a8a58cc69d7ae34a0829d13123"
+    url "https://github.com/lu-zhengda/macbroom/releases/download/v0.1.4/macbroom_0.1.4_darwin_arm64.tar.gz"
+    sha256 "4548801958a239cbfa802cff52afd4197e3d2ad9ef870931db62f8155100be31"
 
     def install
       bin.install "macbroom"
