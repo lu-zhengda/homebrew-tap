@@ -1,8 +1,8 @@
 class Updater < Formula
   desc "macOS app update manager"
   homepage "https://github.com/lu-zhengda/updater"
-  url "https://github.com/lu-zhengda/updater/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "12b7f29c63cc401bb1cdee74405c19ec1dbad73d993d1760fee29493101a598f"
+  url "https://github.com/lu-zhengda/updater/archive/refs/tags/v0.3.1.tar.gz"
+  sha256 "68a1a100aed402e85a93889477c0c1b534d849edc63e51c91623e77b3e004663"
   license "MIT"
 
   depends_on "go" => :build
