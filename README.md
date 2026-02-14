@@ -12,7 +12,16 @@ brew tap lu-zhengda/tap
 
 | Formula | Description |
 |---------|-------------|
+| [macbroom](https://github.com/lu-zhengda/macbroom) | A lightweight macOS cleanup tool — sweep away junk files, visualize disk usage, run maintenance |
 | [updater](https://github.com/lu-zhengda/updater) | macOS app update manager — check and update apps from Sparkle, Homebrew, MAS, and GitHub Releases |
+
+### macbroom
+
+```sh
+brew install lu-zhengda/tap/macbroom
+```
+
+See the [macbroom repo](https://github.com/lu-zhengda/macbroom) for full documentation.
 
 ### updater
 
