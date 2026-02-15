@@ -3,7 +3,7 @@ cask "bltctl" do
   name "bltctl"
   desc "macOS Bluetooth manager"
   homepage "https://github.com/lu-zhengda/bltctl"
-  version "0.2.0"
+  version "0.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,11 +17,11 @@ cask "bltctl" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/bltctl/releases/download/v#{version}/bltctl_#{version}_darwin_amd64.tar.gz"
-      sha256 "64db8b7ee7d1dba04b0fc1e75025d1aa842001b8d1c8683ff8ceda1d6f53674e"
+      sha256 "b53281c02a3a93d4ff8f31c84fc74c0121b3e989bb22fdeeff5056ba1e892d4e"
     end
     on_arm do
       url "https://github.com/lu-zhengda/bltctl/releases/download/v#{version}/bltctl_#{version}_darwin_arm64.tar.gz"
-      sha256 "de3b08c7d90b4552b6e0c25790c867f87032a7a1c66de47a0ca06df0a1de0594"
+      sha256 "7f1d2c83758624edbe472a9fa37f415ba912cb725f159901133756bb51078347"
     end
   end
 
