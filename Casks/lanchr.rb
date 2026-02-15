@@ -3,22 +3,25 @@ cask "lanchr" do
   name "lanchr"
   desc "A macOS launch agent/daemon manager"
   homepage "https://github.com/lu-zhengda/lanchr"
-  version "0.1.1"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "lanchr"
+  bash_completion "completions/lanchr.bash"
+  zsh_completion "completions/lanchr.zsh"
+  fish_completion "completions/lanchr.fish"
 
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/lanchr/releases/download/v#{version}/lanchr_#{version}_darwin_amd64.tar.gz"
-      sha256 "a17892ae93391bd0612d5a22cfb5e909ffb034f9e7d35e6f710a897543286e54"
+      sha256 "c0c7bedaf73db31547425620aeb2bd5b45713f0babff22f97f427944e890ad61"
     end
     on_arm do
       url "https://github.com/lu-zhengda/lanchr/releases/download/v#{version}/lanchr_#{version}_darwin_arm64.tar.gz"
-      sha256 "ce03c8471de53c5afff4e8ee5ceaa14eb63c0d75a11947434d2b6392c50536bf"
+      sha256 "d3f2538b3a81e1b31fbb6fc5a1d24c237b1b7a8fb84a3e1a29f5d4aa68a38034"
     end
   end
 
