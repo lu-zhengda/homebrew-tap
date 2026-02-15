@@ -3,7 +3,7 @@ cask "updater" do
   name "updater"
   desc "macOS app update manager"
   homepage "https://github.com/lu-zhengda/updater"
-  version "0.4.1"
+  version "0.5.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,11 +17,11 @@ cask "updater" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/updater/releases/download/v#{version}/updater_#{version}_darwin_amd64.tar.gz"
-      sha256 "4076af289b639c3784cd7370591b503b2d31cf7c1a70c211ea895f9a021d2851"
+      sha256 "e79531eceacce54c348a2a04d8f7e1b3c38eee0c9576a337b7bcc2ee7d7f4d46"
     end
     on_arm do
       url "https://github.com/lu-zhengda/updater/releases/download/v#{version}/updater_#{version}_darwin_arm64.tar.gz"
-      sha256 "73c92f9758d7a497f2a812dc631ef7d60c2285ea8fcb045fae6f7221125e2b14"
+      sha256 "323a465ccd19cb4b5ba869c78531c12758f2605ab9f40cb1b57e07c42b304dbd"
     end
   end
 
