@@ -17,11 +17,11 @@ cask "macctl" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/macctl/releases/download/v#{version}/macctl_#{version}_darwin_amd64.tar.gz"
-      sha256 "307c4ce8b2fe943a0d8fe5567010cd97c534a950305faea578e2fcf09b4c4ad9"
+      sha256 "df43ab9c90df1d1c8a0dee655a1d063cc4de00d84588a5d8638b670710f1fbf1"
     end
     on_arm do
       url "https://github.com/lu-zhengda/macctl/releases/download/v#{version}/macctl_#{version}_darwin_arm64.tar.gz"
-      sha256 "84a68f1a628ee07b41bc78bb90872ee547a9669ff4faf1286087a4af3bbfde4d"
+      sha256 "b9dbd3e1bdb7b8679b787dd7b0a2edd12e214193d6ac76302e2a1eaec978cad3"
     end
   end
 
