@@ -5,24 +5,36 @@
 class Macbroom < Formula
   desc "A lightweight macOS cleanup tool"
   homepage "https://github.com/lu-zhengda/macbroom"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/lu-zhengda/macbroom/releases/download/v0.2.0/macbroom_0.2.0_darwin_amd64.tar.gz"
-    sha256 "1f234bf1a967b3fe0628b08019146e86eb1178cdbaed85813b603f89d3a204dc"
+    url "https://github.com/lu-zhengda/macbroom/releases/download/v0.2.1/macbroom_0.2.1_darwin_amd64.tar.gz"
+    sha256 "586de48d2fe1865486db2bfe98df3bf5af65fd2caa3d334a100e6688df09bb72"
 
     def install
       bin.install "macbroom"
+      bash_output = Utils.safe_popen_read(bin/"macbroom", "--generate-completion", "bash")
+      (bash_completion/"macbroom").write bash_output
+      zsh_output = Utils.safe_popen_read(bin/"macbroom", "--generate-completion", "zsh")
+      (zsh_completion/"_macbroom").write zsh_output
+      fish_output = Utils.safe_popen_read(bin/"macbroom", "--generate-completion", "fish")
+      (fish_completion/"macbroom.fish").write fish_output
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/lu-zhengda/macbroom/releases/download/v0.2.0/macbroom_0.2.0_darwin_arm64.tar.gz"
-    sha256 "86e9d5db9bf8b0fc7bb83bda899b2ea99c097e834c18360f445da17aee87256e"
+    url "https://github.com/lu-zhengda/macbroom/releases/download/v0.2.1/macbroom_0.2.1_darwin_arm64.tar.gz"
+    sha256 "8375c339a511d033ff5b45de691063f77c19f3b0d53bc7fedffccdf6d4c11447"
 
     def install
       bin.install "macbroom"
+      bash_output = Utils.safe_popen_read(bin/"macbroom", "--generate-completion", "bash")
+      (bash_completion/"macbroom").write bash_output
+      zsh_output = Utils.safe_popen_read(bin/"macbroom", "--generate-completion", "zsh")
+      (zsh_completion/"_macbroom").write zsh_output
+      fish_output = Utils.safe_popen_read(bin/"macbroom", "--generate-completion", "fish")
+      (fish_completion/"macbroom.fish").write fish_output
     end
   end
 
