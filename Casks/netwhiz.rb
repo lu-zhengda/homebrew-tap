@@ -3,22 +3,25 @@ cask "netwhiz" do
   name "netwhiz"
   desc "A network diagnostics toolkit for macOS"
   homepage "https://github.com/lu-zhengda/netwhiz"
-  version "0.1.1"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "netwhiz"
+  bash_completion "completions/netwhiz.bash"
+  zsh_completion "completions/netwhiz.zsh"
+  fish_completion "completions/netwhiz.fish"
 
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/netwhiz/releases/download/v#{version}/netwhiz_#{version}_darwin_amd64.tar.gz"
-      sha256 "3be244029e852a33cf92951767ad76bd81ca0d7e7aebc791f937b26c65662564"
+      sha256 "fa0f9312b92209893613fe2b8b1ea93219b727512db739c735c028ab04a2412c"
     end
     on_arm do
       url "https://github.com/lu-zhengda/netwhiz/releases/download/v#{version}/netwhiz_#{version}_darwin_arm64.tar.gz"
-      sha256 "551dee1a7353ec669f0fd43ed45ed07863a0ab9c1a7cc13dfb4bc816998c4b7a"
+      sha256 "6376bc07481f039554e797c35df113ab9bfe28791aed8dd23fe740d19d57539c"
     end
   end
 
