@@ -78,3 +78,7 @@ brew install lu-zhengda/tap/lanchr
 ```
 
 See the [lanchr repo](https://github.com/lu-zhengda/lanchr) for full documentation.
+
+## Claude Code Integration
+
+All tools in this tap are available as a [Claude Code plugin](https://github.com/lu-zhengda/macos-toolkit). Install it to use these tools through natural language in Claude Code.
