@@ -21,6 +21,7 @@ brew tap lu-zhengda/tap
 | [bltctl](https://github.com/lu-zhengda/bltctl) | macOS Bluetooth manager — browse, connect, and manage Bluetooth devices |
 | [macdog](https://github.com/lu-zhengda/macdog) | macOS security & privacy suite — audit, firewall, privacy permissions, and hardening |
 | [pstop](https://github.com/lu-zhengda/pstop) | Process explorer for macOS — browse, search, and manage processes with a live TUI |
+| [macctl](https://github.com/lu-zhengda/macctl) | macOS environment controller — power, display, audio, focus, and presets |
 
 ### macbroom
 
@@ -105,6 +106,14 @@ brew install lu-zhengda/tap/pstop
 ```
 
 See the [pstop repo](https://github.com/lu-zhengda/pstop) for full documentation.
+
+### macctl
+
+```sh
+brew install lu-zhengda/tap/macctl
+```
+
+See the [macctl repo](https://github.com/lu-zhengda/macctl) for full documentation.
 
 ## Claude Code Integration
 
