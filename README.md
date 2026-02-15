@@ -12,12 +12,12 @@ brew tap lu-zhengda/tap
 
 | Formula | Description |
 |---------|-------------|
-| [macbroom](https://github.com/lu-zhengda/macbroom) | A lightweight macOS cleanup tool — sweep away junk files, visualize disk usage, run maintenance |
-| [updater](https://github.com/lu-zhengda/updater) | macOS app update manager — check and update apps from Sparkle, Homebrew, MAS, GitHub Releases, Electron, and more |
-| [macfig](https://github.com/lu-zhengda/macfig) | macOS hidden defaults manager — browse, search, and apply system preferences |
-| [netwhiz](https://github.com/lu-zhengda/netwhiz) | A network diagnostics toolkit for macOS — inspect interfaces, test connectivity, scan ports |
-| [whport](https://github.com/lu-zhengda/whport) | Port & process manager for macOS — see what's listening, kill by port, monitor changes |
-| [lanchr](https://github.com/lu-zhengda/lanchr) | A macOS launch agent/daemon manager — inspect, manage, and troubleshoot launchd services |
+| [macbroom](https://github.com/lu-zhengda/macbroom) | macOS cleanup tool — sweep away junk files, visualize disk usage, run maintenance |
+| [updater](https://github.com/lu-zhengda/updater) | macOS app update manager — check and update apps from Sparkle, Homebrew, Mac App Store, and GitHub Releases |
+| [macfig](https://github.com/lu-zhengda/macfig) | macOS hidden defaults manager — browse, search, and apply system preferences with presets |
+| [netwhiz](https://github.com/lu-zhengda/netwhiz) | Network diagnostics toolkit for macOS — interfaces, WiFi, DNS, speed tests, and LAN scanning |
+| [whport](https://github.com/lu-zhengda/whport) | Port & process manager for macOS — find listeners, kill by port, and monitor changes live |
+| [lanchr](https://github.com/lu-zhengda/lanchr) | macOS launch agent & daemon manager — inspect, create, and troubleshoot launchd services |
 
 ### macbroom
 
