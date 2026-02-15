@@ -1,129 +1,50 @@
-# Homebrew Tap
+# homebrew-tap
 
-Custom Homebrew formulae by [@lu-zhengda](https://github.com/lu-zhengda).
+[![Platform: macOS](https://img.shields.io/badge/Platform-macOS-lightgrey.svg)](https://github.com/lu-zhengda/homebrew-tap)
+[![Homebrew](https://img.shields.io/badge/Homebrew-tap-orange.svg)](https://github.com/lu-zhengda/homebrew-tap)
+[![Claude Code Plugin](https://img.shields.io/badge/Claude_Code-Plugin-blueviolet.svg)](https://github.com/lu-zhengda/macos-toolkit)
 
-## Install
+Homebrew tap for macOS CLI tools — system management, network diagnostics, security auditing, email, and more.
+
+## Quick Start
 
 ```sh
 brew tap lu-zhengda/tap
+brew install macbroom updater macfig netwhiz whport lanchr bltctl macdog pstop macctl termail
+```
+
+Or install individual tools:
+
+```sh
+brew install lu-zhengda/tap/<formula>
 ```
 
 ## Formulae
 
 | Formula | Description |
 |---------|-------------|
-| [macbroom](https://github.com/lu-zhengda/macbroom) | macOS cleanup tool — sweep away junk files, visualize disk usage, run maintenance |
-| [updater](https://github.com/lu-zhengda/updater) | macOS app update manager — check and update apps from Sparkle, Homebrew, Mac App Store, and GitHub Releases |
-| [macfig](https://github.com/lu-zhengda/macfig) | macOS hidden defaults manager — browse, search, and apply system preferences with presets |
-| [netwhiz](https://github.com/lu-zhengda/netwhiz) | Network diagnostics toolkit for macOS — interfaces, WiFi, DNS, speed tests, and LAN scanning |
-| [whport](https://github.com/lu-zhengda/whport) | Port & process manager for macOS — find listeners, kill by port, and monitor changes live |
-| [lanchr](https://github.com/lu-zhengda/lanchr) | macOS launch agent & daemon manager — inspect, create, and troubleshoot launchd services |
-| [bltctl](https://github.com/lu-zhengda/bltctl) | macOS Bluetooth manager — browse, connect, and manage Bluetooth devices |
-| [macdog](https://github.com/lu-zhengda/macdog) | macOS security & privacy suite — audit, firewall, privacy permissions, and hardening |
-| [pstop](https://github.com/lu-zhengda/pstop) | Process explorer for macOS — browse, search, and manage processes with a live TUI |
-| [macctl](https://github.com/lu-zhengda/macctl) | macOS environment controller — power, display, audio, focus, and presets |
-| [termail](https://github.com/lu-zhengda/termail) | Terminal email client — read, compose, reply, search, and manage Gmail from the terminal |
+| [macbroom](https://github.com/lu-zhengda/macbroom) | System cleanup — sweep away junk files, visualize disk usage, run maintenance |
+| [updater](https://github.com/lu-zhengda/updater) | App update manager — check and update apps from Sparkle, Homebrew, Mac App Store, GitHub |
+| [macfig](https://github.com/lu-zhengda/macfig) | Hidden defaults manager — browse, search, and apply system preferences with presets |
+| [netwhiz](https://github.com/lu-zhengda/netwhiz) | Network diagnostics — interfaces, WiFi, DNS, speed tests, and LAN scanning |
+| [whport](https://github.com/lu-zhengda/whport) | Port & process manager — find listeners, kill by port, and monitor changes live |
+| [lanchr](https://github.com/lu-zhengda/lanchr) | Launch agent & daemon manager — inspect, create, and troubleshoot launchd services |
+| [bltctl](https://github.com/lu-zhengda/bltctl) | Bluetooth manager — browse, connect, and manage devices with battery monitoring |
+| [macdog](https://github.com/lu-zhengda/macdog) | Security & privacy suite — audit, firewall, privacy permissions, and hardening |
+| [pstop](https://github.com/lu-zhengda/pstop) | Process explorer — browse, search, and manage processes with a live TUI |
+| [macctl](https://github.com/lu-zhengda/macctl) | Environment controller — power, display, audio, focus modes, and presets |
+| [termail](https://github.com/lu-zhengda/termail) | Terminal email client — read, compose, reply, search, and manage Gmail |
 
-### macbroom
+## Claude Code
 
-```sh
-brew install lu-zhengda/tap/macbroom
-```
-
-See the [macbroom repo](https://github.com/lu-zhengda/macbroom) for full documentation.
-
-### updater
+All tools in this tap are available as a [Claude Code plugin](https://github.com/lu-zhengda/macos-toolkit). Install the plugin to use these tools through natural language:
 
 ```sh
-brew install lu-zhengda/tap/updater
+claude plugin add macos-toolkit@macos-toolkit
 ```
 
-Scans `/Applications` for installed apps and checks for updates from multiple sources:
+Then just ask Claude: "clean up my Mac", "check my WiFi", "what's on port 3000", "check my email", etc.
 
-| Source | Detection |
-|--------|-----------|
-| Mac App Store | MAS receipt |
-| Sparkle | Sparkle.framework + SUFeedURL |
-| Homebrew | Cask/formula cross-reference |
-| GitHub Releases | Config mapping or auto-detected from Electron `app-update.yml` |
-| Electron | Electron Framework + generic update server (`latest-mac.yml`) |
-| Setapp / JetBrains Toolbox / Adobe CC | Path and bundle ID heuristics (managed externally) |
-| macOS System | `softwareupdate` |
+## License
 
-See the [updater repo](https://github.com/lu-zhengda/updater) for full documentation.
-
-### macfig
-
-```sh
-brew install lu-zhengda/tap/macfig
-```
-
-See the [macfig repo](https://github.com/lu-zhengda/macfig) for full documentation.
-
-### netwhiz
-
-```sh
-brew install lu-zhengda/tap/netwhiz
-```
-
-See the [netwhiz repo](https://github.com/lu-zhengda/netwhiz) for full documentation.
-
-### whport
-
-```sh
-brew install lu-zhengda/tap/whport
-```
-
-See the [whport repo](https://github.com/lu-zhengda/whport) for full documentation.
-
-### lanchr
-
-```sh
-brew install lu-zhengda/tap/lanchr
-```
-
-See the [lanchr repo](https://github.com/lu-zhengda/lanchr) for full documentation.
-
-### bltctl
-
-```sh
-brew install lu-zhengda/tap/bltctl
-```
-
-See the [bltctl repo](https://github.com/lu-zhengda/bltctl) for full documentation.
-
-### macdog
-
-```sh
-brew install lu-zhengda/tap/macdog
-```
-
-See the [macdog repo](https://github.com/lu-zhengda/macdog) for full documentation.
-
-### pstop
-
-```sh
-brew install lu-zhengda/tap/pstop
-```
-
-See the [pstop repo](https://github.com/lu-zhengda/pstop) for full documentation.
-
-### macctl
-
-```sh
-brew install lu-zhengda/tap/macctl
-```
-
-See the [macctl repo](https://github.com/lu-zhengda/macctl) for full documentation.
-
-### termail
-
-```sh
-brew install lu-zhengda/tap/termail
-```
-
-See the [termail repo](https://github.com/lu-zhengda/termail) for full documentation.
-
-## Claude Code Integration
-
-All tools in this tap are available as a [Claude Code plugin](https://github.com/lu-zhengda/macos-toolkit). Install it to use these tools through natural language in Claude Code.
+[MIT](LICENSE)
