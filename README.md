@@ -22,6 +22,7 @@ brew tap lu-zhengda/tap
 | [macdog](https://github.com/lu-zhengda/macdog) | macOS security & privacy suite — audit, firewall, privacy permissions, and hardening |
 | [pstop](https://github.com/lu-zhengda/pstop) | Process explorer for macOS — browse, search, and manage processes with a live TUI |
 | [macctl](https://github.com/lu-zhengda/macctl) | macOS environment controller — power, display, audio, focus, and presets |
+| [termail](https://github.com/lu-zhengda/termail) | Terminal email client — read, compose, reply, search, and manage Gmail from the terminal |
 
 ### macbroom
 
@@ -114,6 +115,14 @@ brew install lu-zhengda/tap/macctl
 ```
 
 See the [macctl repo](https://github.com/lu-zhengda/macctl) for full documentation.
+
+### termail
+
+```sh
+brew install lu-zhengda/tap/termail
+```
+
+See the [termail repo](https://github.com/lu-zhengda/termail) for full documentation.
 
 ## Claude Code Integration
 
