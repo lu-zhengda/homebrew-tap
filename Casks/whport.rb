@@ -3,22 +3,25 @@ cask "whport" do
   name "whport"
   desc "Port & process manager for macOS"
   homepage "https://github.com/lu-zhengda/whport"
-  version "0.1.1"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "whport"
+  bash_completion "completions/whport.bash"
+  zsh_completion "completions/whport.zsh"
+  fish_completion "completions/whport.fish"
 
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/whport/releases/download/v#{version}/whport_#{version}_darwin_amd64.tar.gz"
-      sha256 "7e03e7bfad5510a0d0f9c284fba08fb0291a620afa30a29b66654b83a4f9a9a8"
+      sha256 "2c5db8075a24cf499e362d186b31da3b35d1b638e678c786710a89d4a5e4c6ba"
     end
     on_arm do
       url "https://github.com/lu-zhengda/whport/releases/download/v#{version}/whport_#{version}_darwin_arm64.tar.gz"
-      sha256 "e2aafcd2f70d8fb72c0188052f80eb7d6a07711db1624d4782bc503f68c8f319"
+      sha256 "5faf2258b815e8994dd0ab68a23f19e22b014e3e3bce5c8a9897e718afe9af56"
     end
   end
 
