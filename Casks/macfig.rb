@@ -3,22 +3,25 @@ cask "macfig" do
   name "macfig"
   desc "macOS hidden defaults manager"
   homepage "https://github.com/lu-zhengda/macfig"
-  version "0.1.1"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "macfig"
+  bash_completion "completions/macfig.bash"
+  zsh_completion "completions/macfig.zsh"
+  fish_completion "completions/macfig.fish"
 
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/macfig/releases/download/v#{version}/macfig_#{version}_darwin_amd64.tar.gz"
-      sha256 "e70e8078a47f4255afc9455a518544537b33e3c77788e195eb02dc9596a41ab0"
+      sha256 "29db4f94e94e14d60a1289c5033a810cc73f21a951a56423b4ee834e58507af1"
     end
     on_arm do
       url "https://github.com/lu-zhengda/macfig/releases/download/v#{version}/macfig_#{version}_darwin_arm64.tar.gz"
-      sha256 "f319ae2f979ee67b59962796319cd1bab652e2873ec41c37af6310cdbe34a1e1"
+      sha256 "532da20927b6e35cce582f4e9d36332dbcb747299cdb76ed305ea0f4f5e703b7"
     end
   end
 
