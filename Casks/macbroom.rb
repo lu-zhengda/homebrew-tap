@@ -10,7 +10,6 @@ cask "macbroom" do
   end
 
   binary "macbroom"
-  manpage "docs/man/macbroom.1"
   bash_completion "completions/macbroom.bash"
   zsh_completion "completions/macbroom.zsh"
   fish_completion "completions/macbroom.fish"
@@ -18,11 +17,11 @@ cask "macbroom" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/macbroom/releases/download/v#{version}/macbroom_#{version}_darwin_amd64.tar.gz"
-      sha256 "d2ea8fae41ea1676976b55e5bb8a7c52e5dd3327d04d8a5a09535c8e3819bf82"
+      sha256 "d2b638e0785653376206967c596eb312dd9d3e546d45a34962e629415c89ecec"
     end
     on_arm do
       url "https://github.com/lu-zhengda/macbroom/releases/download/v#{version}/macbroom_#{version}_darwin_arm64.tar.gz"
-      sha256 "095d8bdc9c2fc7e1f42a271b1145c4633121f3ea7b8c3d3a14883e243034d355"
+      sha256 "00706338f51bdfc26d22501eb799c6c70166c4fba365466e3573787a96583df4"
     end
   end
 
