@@ -17,11 +17,11 @@ cask "termail" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/termail/releases/download/v#{version}/termail_#{version}_darwin_amd64.tar.gz"
-      sha256 "6b432087ee7fb8235b69044bb45e2dd025b83e04fc6563ad3ff2a66c807a12f0"
+      sha256 "2d61652b790d441ddf3b4b297a374be53b09f5ba21aa4793892cb534b5ac5ac4"
     end
     on_arm do
       url "https://github.com/lu-zhengda/termail/releases/download/v#{version}/termail_#{version}_darwin_arm64.tar.gz"
-      sha256 "64aaad76159ad8d88ef02f539a420cd831fe6fa017848682947081356fd36707"
+      sha256 "0dc3f5cb1be39b1a4fa2870777720df2b67a765fe58d73e6ede0deeac9f193ee"
     end
   end
 
