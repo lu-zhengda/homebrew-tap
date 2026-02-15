@@ -3,7 +3,7 @@ cask "updater" do
   name "updater"
   desc "macOS app update manager"
   homepage "https://github.com/lu-zhengda/updater"
-  version "0.6.0"
+  version "0.7.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -16,7 +16,7 @@ cask "updater" do
 
   on_macos do
     url "https://github.com/lu-zhengda/updater/releases/download/v#{version}/updater_#{version}_darwin.tar.gz"
-    sha256 "7b4fa64caeaf0b2088f306724cd2ce3bf9bc7cb49cd070273d824998664ebadd"
+    sha256 "28ed57799d74c637bd316b7ebe6a14f80084c5d583c2287eccee2a11a3687587"
   end
 
   postflight do
