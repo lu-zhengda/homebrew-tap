@@ -14,6 +14,10 @@ brew tap lu-zhengda/tap
 |---------|-------------|
 | [macbroom](https://github.com/lu-zhengda/macbroom) | A lightweight macOS cleanup tool — sweep away junk files, visualize disk usage, run maintenance |
 | [updater](https://github.com/lu-zhengda/updater) | macOS app update manager — check and update apps from Sparkle, Homebrew, MAS, GitHub Releases, Electron, and more |
+| [macfig](https://github.com/lu-zhengda/macfig) | macOS hidden defaults manager — browse, search, and apply system preferences |
+| [netwhiz](https://github.com/lu-zhengda/netwhiz) | A network diagnostics toolkit for macOS — inspect interfaces, test connectivity, scan ports |
+| [whport](https://github.com/lu-zhengda/whport) | Port & process manager for macOS — see what's listening, kill by port, monitor changes |
+| [lanchr](https://github.com/lu-zhengda/lanchr) | A macOS launch agent/daemon manager — inspect, manage, and troubleshoot launchd services |
 
 ### macbroom
 
@@ -42,3 +46,35 @@ Scans `/Applications` for installed apps and checks for updates from multiple so
 | macOS System | `softwareupdate` |
 
 See the [updater repo](https://github.com/lu-zhengda/updater) for full documentation.
+
+### macfig
+
+```sh
+brew install lu-zhengda/tap/macfig
+```
+
+See the [macfig repo](https://github.com/lu-zhengda/macfig) for full documentation.
+
+### netwhiz
+
+```sh
+brew install lu-zhengda/tap/netwhiz
+```
+
+See the [netwhiz repo](https://github.com/lu-zhengda/netwhiz) for full documentation.
+
+### whport
+
+```sh
+brew install lu-zhengda/tap/whport
+```
+
+See the [whport repo](https://github.com/lu-zhengda/whport) for full documentation.
+
+### lanchr
+
+```sh
+brew install lu-zhengda/tap/lanchr
+```
+
+See the [lanchr repo](https://github.com/lu-zhengda/lanchr) for full documentation.
