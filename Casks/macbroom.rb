@@ -17,11 +17,11 @@ cask "macbroom" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/macbroom/releases/download/v#{version}/macbroom_#{version}_darwin_amd64.tar.gz"
-      sha256 "64cdc1587321a7f6a9ebf64dceef776e878e20d667dd54bac7189e94be4a01c1"
+      sha256 "baf04b27863bf216090a7a589cd6015d9d276796bc17aa8172ca00e726526975"
     end
     on_arm do
       url "https://github.com/lu-zhengda/macbroom/releases/download/v#{version}/macbroom_#{version}_darwin_arm64.tar.gz"
-      sha256 "6fd6aeedf65e3b7b94fbb1694001cdf3b5113c6c018e8ec7a036f8a780f78306"
+      sha256 "c5c6df990eda78534486cc6ce56eb47a008a950e1bb2c0e64d032c338bf9ced5"
     end
   end
 
