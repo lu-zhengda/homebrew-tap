@@ -3,7 +3,7 @@ cask "macbroom" do
   name "macbroom"
   desc "A lightweight macOS cleanup tool"
   homepage "https://github.com/lu-zhengda/macbroom"
-  version "0.2.2"
+  version "0.3.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,11 +17,11 @@ cask "macbroom" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/macbroom/releases/download/v#{version}/macbroom_#{version}_darwin_amd64.tar.gz"
-      sha256 "d2b638e0785653376206967c596eb312dd9d3e546d45a34962e629415c89ecec"
+      sha256 "ce20f0ac1999320e919cd8b843e893c0c6f0cd3b8dd8e918758273cbd1168e56"
     end
     on_arm do
       url "https://github.com/lu-zhengda/macbroom/releases/download/v#{version}/macbroom_#{version}_darwin_arm64.tar.gz"
-      sha256 "00706338f51bdfc26d22501eb799c6c70166c4fba365466e3573787a96583df4"
+      sha256 "8a75df3bafd0078779a98b09bd8f86fe5915f2a1a995518ba58066e71fa1638a"
     end
   end
 
