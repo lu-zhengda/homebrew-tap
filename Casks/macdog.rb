@@ -3,7 +3,7 @@ cask "macdog" do
   name "macdog"
   desc "macOS security and privacy suite"
   homepage "https://github.com/lu-zhengda/macdog"
-  version "0.4.0"
+  version "0.4.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,11 +17,11 @@ cask "macdog" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/macdog/releases/download/v#{version}/macdog_#{version}_darwin_amd64.tar.gz"
-      sha256 "3c3647856342172644b2e3c4d4301fc7866cdcb38fe84330e7bb83f8447da425"
+      sha256 "9b41ea07ff93e42a666cb2bdad00b342faabce46b557d32703c412d5056bc347"
     end
     on_arm do
       url "https://github.com/lu-zhengda/macdog/releases/download/v#{version}/macdog_#{version}_darwin_arm64.tar.gz"
-      sha256 "f0c561c1b1b589b8d66ec283f26df6b5dd4e02e0fd8ebfdc741f9c4e5c07ea6f"
+      sha256 "ee10d841ba442bb4fb48e85461b02532250b3495e6af90ff18eeb96b32a8c1f2"
     end
   end
 
