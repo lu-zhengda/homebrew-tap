@@ -3,7 +3,7 @@ cask "termail" do
   name "termail"
   desc "Terminal email client with Gmail support"
   homepage "https://github.com/lu-zhengda/termail"
-  version "0.1.0"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,11 +17,11 @@ cask "termail" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/termail/releases/download/v#{version}/termail_#{version}_darwin_amd64.tar.gz"
-      sha256 "2d61652b790d441ddf3b4b297a374be53b09f5ba21aa4793892cb534b5ac5ac4"
+      sha256 "053c4f32ea2c1b323a61881ab8ec0dd44ed1213a7fc9cc31178ce54ee6650dcc"
     end
     on_arm do
       url "https://github.com/lu-zhengda/termail/releases/download/v#{version}/termail_#{version}_darwin_arm64.tar.gz"
-      sha256 "0dc3f5cb1be39b1a4fa2870777720df2b67a765fe58d73e6ede0deeac9f193ee"
+      sha256 "9ff26a182decb971c1ae86670edf87a609e795a7b9fd038af2bd8eaefa688062"
     end
   end
 
