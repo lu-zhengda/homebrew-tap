@@ -3,7 +3,7 @@ cask "pstop" do
   name "pstop"
   desc "Process explorer for macOS"
   homepage "https://github.com/lu-zhengda/pstop"
-  version "0.4.0"
+  version "0.5.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,11 +17,11 @@ cask "pstop" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/pstop/releases/download/v#{version}/pstop_#{version}_darwin_amd64.tar.gz"
-      sha256 "c476f93e4e7e82e7778a56969d091f69b3466219a6273dae7ac8c5e097ed3903"
+      sha256 "bcaa1bd4d36b554775f5c7bdf84446b13a45cca158c008b73bbb94795592fd2f"
     end
     on_arm do
       url "https://github.com/lu-zhengda/pstop/releases/download/v#{version}/pstop_#{version}_darwin_arm64.tar.gz"
-      sha256 "b032fd3c8c738c1419d0e5b49e4068dede968f5124c40eca8e6e1043f150feeb"
+      sha256 "f33968dac2237f5f4e0671a4fc48335c680127952bb34a8b0ec042bc13647a3e"
     end
   end
 
