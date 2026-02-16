@@ -3,7 +3,7 @@ cask "macctl" do
   name "macctl"
   desc "macOS environment controller"
   homepage "https://github.com/lu-zhengda/macctl"
-  version "0.2.2"
+  version "0.2.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -17,11 +17,11 @@ cask "macctl" do
   on_macos do
     on_intel do
       url "https://github.com/lu-zhengda/macctl/releases/download/v#{version}/macctl_#{version}_darwin_amd64.tar.gz"
-      sha256 "2cdcc2e57761499c62f34d0b8a27b48413502722b26f9de1797a739fa799fc8e"
+      sha256 "e4e6fe8f199e4f18898a36f46cbf80e4cd1f13798db60be7837feb3e96a70064"
     end
     on_arm do
       url "https://github.com/lu-zhengda/macctl/releases/download/v#{version}/macctl_#{version}_darwin_arm64.tar.gz"
-      sha256 "eec47555a013d1cea21ca2d0f31db9b3f80527218c457cafe4586cba8431fd71"
+      sha256 "d5228234650272fb1cf87890e58bb6c9d8b75145745f763353f4e04a56ce7093"
     end
   end
 
