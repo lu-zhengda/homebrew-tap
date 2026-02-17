@@ -10,7 +10,7 @@ Homebrew tap for macOS CLI tools — system management, network diagnostics, sec
 
 ```sh
 brew tap lu-zhengda/tap
-brew install macbroom updater macfig netwhiz whport lanchr bltctl macdog pstop macctl termail
+brew install macbroom updater macfig netwhiz lanchr macdog pstop macctl termail machealth
 ```
 
 Or install individual tools:
@@ -27,13 +27,12 @@ brew install lu-zhengda/tap/<formula>
 | [updater](https://github.com/lu-zhengda/updater) | App update manager — check and update apps from Sparkle, Homebrew, Mac App Store, GitHub |
 | [macfig](https://github.com/lu-zhengda/macfig) | Hidden defaults manager — browse, search, and apply system preferences with presets |
 | [netwhiz](https://github.com/lu-zhengda/netwhiz) | Network diagnostics — interfaces, WiFi, DNS, speed tests, and LAN scanning |
-| [whport](https://github.com/lu-zhengda/whport) | Port & process manager — find listeners, kill by port, and monitor changes live |
 | [lanchr](https://github.com/lu-zhengda/lanchr) | Launch agent & daemon manager — inspect, create, and troubleshoot launchd services |
-| [bltctl](https://github.com/lu-zhengda/bltctl) | Bluetooth manager — browse, connect, and manage devices with battery monitoring |
 | [macdog](https://github.com/lu-zhengda/macdog) | Security & privacy suite — audit, firewall, privacy permissions, and hardening |
 | [pstop](https://github.com/lu-zhengda/pstop) | Process explorer — browse, search, and manage processes with a live TUI |
 | [macctl](https://github.com/lu-zhengda/macctl) | Environment controller — power, display, audio, focus modes, and presets |
 | [termail](https://github.com/lu-zhengda/termail) | Terminal email client — read, compose, reply, search, and manage Gmail |
+| [machealth](https://github.com/lu-zhengda/machealth) | System health checker — unified health assessment across 8 subsystems with JSON output |
 
 ## Claude Code
 
@@ -43,7 +42,7 @@ All tools in this tap are available as a [Claude Code plugin](https://github.com
 claude plugin add macos-toolkit@macos-toolkit
 ```
 
-Then just ask Claude: "clean up my Mac", "check my WiFi", "what's on port 3000", "check my email", etc.
+Then just ask Claude: "clean up my Mac", "check my WiFi", "run a health check", "check my email", etc.
 
 ## License
 
