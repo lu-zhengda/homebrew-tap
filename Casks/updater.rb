@@ -3,7 +3,7 @@ cask "updater" do
   name "updater"
   desc "macOS app update manager"
   homepage "https://github.com/lu-zhengda/updater"
-  version "0.10.3"
+  version "0.10.4"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,10 +13,13 @@ cask "updater" do
   bash_completion "completions/updater.bash"
   zsh_completion "completions/updater.zsh"
   fish_completion "completions/updater.fish"
+  depends_on formula: [
+      "mas",
+    ]
 
   on_macos do
     url "https://github.com/lu-zhengda/updater/releases/download/v#{version}/updater_#{version}_darwin.tar.gz"
-    sha256 "d21b2078486214325babc9ea37f96b090a123c69d298f61ac1585278828c097d"
+    sha256 "778f3ab9e071dd24dec05f2512fc27c509573a07a551707f1154a59c1ccc6f0c"
   end
 
   postflight do
