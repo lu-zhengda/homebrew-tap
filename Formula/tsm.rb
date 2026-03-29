@@ -1,7 +1,7 @@
 class Tsm < Formula
   desc "A CLI for Transmission BitTorrent client"
   homepage "https://github.com/lu-zhengda/tsm"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
