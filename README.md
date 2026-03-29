@@ -10,7 +10,7 @@ Homebrew tap for macOS CLI tools — system management, network diagnostics, sec
 
 ```sh
 brew tap lu-zhengda/tap
-brew install macbroom updater macfig netwhiz lanchr macdog pstop macctl termail machealth
+brew install macbroom updater macfig netwhiz lanchr macdog pstop macctl termail machealth tsm
 ```
 
 Or install individual tools:
@@ -33,6 +33,7 @@ brew install lu-zhengda/tap/<formula>
 | [macctl](https://github.com/lu-zhengda/macctl) | Environment controller — power, display, audio, focus modes, and presets |
 | [termail](https://github.com/lu-zhengda/termail) | Terminal email client — read, compose, reply, search, and manage Gmail |
 | [machealth](https://github.com/lu-zhengda/machealth) | System health checker — unified health assessment across 8 subsystems with JSON output |
+| [tsm](https://github.com/lu-zhengda/tsm) | Transmission CLI — manage torrents, trackers, seeding policies, and bandwidth via RPC |
 
 ## Claude Code
 
