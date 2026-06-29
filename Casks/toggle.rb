@@ -4,7 +4,7 @@ cask "toggle" do
 
   url "https://github.com/lu-zhengda/toggle/releases/download/v#{version}/Toggle.zip"
   name "Toggle"
-  desc "Native macOS menu bar app for one-tap system switches"
+  desc "Menu bar app for one-tap system switches"
   homepage "https://github.com/lu-zhengda/toggle"
 
   livecheck do
@@ -20,7 +20,5 @@ cask "toggle" do
     system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/Toggle.app"]
   end
 
-  zap trash: [
-    "~/Library/Preferences/com.local.toggle.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.local.toggle.plist"
 end
