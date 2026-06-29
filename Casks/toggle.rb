@@ -1,6 +1,6 @@
 cask "toggle" do
-  version "1.0.0"
-  sha256 "9d5cd724f7fbc335fca6ca8e974fa731f0e7f8007c8846688b9370c3c096c157"
+  version "1.0.1"
+  sha256 "de739d747a337f92641d571575a54a9cb987a3578ec800d2ddaff2bac5524e74"
 
   url "https://github.com/lu-zhengda/toggle/releases/download/v#{version}/Toggle.zip"
   name "Toggle"
