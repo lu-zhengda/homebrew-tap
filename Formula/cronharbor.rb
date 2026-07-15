@@ -1,8 +1,8 @@
 class Cronharbor < Formula
   desc "Native macOS menu bar app for safely managing user cron jobs"
   homepage "https://github.com/lu-zhengda/CronHarbor"
-  url "https://github.com/lu-zhengda/CronHarbor/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "2e4b6d69d0c56fb2b6d1593c03ab624ff717582c5a3b93c24d2c80f057cdd18c"
+  url "https://github.com/lu-zhengda/CronHarbor/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "d1e4c37dfda6589417bc3d075eabfe7f713eb0fc5339019ce2e9899a5c0ea822"
   license "MIT"
 
   depends_on macos: :sonoma
@@ -27,6 +27,8 @@ class Cronharbor < Formula
                  shell_output("/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' #{info_plist}").strip
     assert_equal version.to_s,
                  shell_output("/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' #{info_plist}").strip
+    assert_equal "true",
+                 shell_output("/usr/libexec/PlistBuddy -c 'Print :LSUIElement' #{info_plist}").strip
     system "/usr/bin/codesign", "--verify", "--deep", "--strict", app
   end
 end
