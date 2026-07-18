@@ -25,9 +25,16 @@ cask "updater" do
   fish_completion "completions/updater.fish"
   zsh_completion "completions/updater.zsh"
 
+  preflight do
+    if OS.mac?
+      system_command "/bin/rm", args: ["-rf", "#{appdir}/Updater.app"], sudo: false
+    end
+  end
+
   postflight do
     if OS.mac?
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Updater.app"], sudo: false
+      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/updater"], sudo: false
       system_command "/usr/bin/open", args: ["#{appdir}/Updater.app"], sudo: false
     end
   end
