@@ -1,8 +1,8 @@
 class Cronharbor < Formula
   desc "Native macOS menu bar app for safely managing user cron jobs"
   homepage "https://github.com/lu-zhengda/CronHarbor"
-  url "https://github.com/lu-zhengda/CronHarbor/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "d1e4c37dfda6589417bc3d075eabfe7f713eb0fc5339019ce2e9899a5c0ea822"
+  url "https://github.com/lu-zhengda/CronHarbor/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "1d2a0402aef79ea8bb82a8b7f26b0b3b032d05609939e6ce31153e27ed3e55ec"
   license "MIT"
 
   depends_on macos: :sonoma
