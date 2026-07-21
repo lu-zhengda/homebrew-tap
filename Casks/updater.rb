@@ -2,10 +2,10 @@
 cask "updater" do
   app "Updater.app"
 
-  version "0.16.1"
+  version "0.16.2"
 
   on_macos do
-    sha256 "290ec2d9db154e30fd44a5b0e4771367862a2b4c6324b6345f88e21efcfa4220"
+    sha256 "c7484cbde002e86f955597b1a7cec82ff4cabf1be8ce8804002fdc225c618edc"
     url "https://github.com/lu-zhengda/updater/releases/download/v#{version}/updater_#{version}_darwin.tar.gz"
   end
 
@@ -27,14 +27,16 @@ cask "updater" do
 
   preflight do
     if OS.mac?
+      # Replace a manually-placed copy (e.g. from the release tarball);
+      # Homebrew refuses to overwrite an app it did not install.
       system_command "/bin/rm", args: ["-rf", "#{appdir}/Updater.app"], sudo: false
     end
   end
 
   postflight do
     if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Updater.app"], sudo: false
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/updater"], sudo: false
+      # The release is Developer ID signed and notarized; preserve
+      # quarantine so Gatekeeper can enforce that trust decision.
       system_command "/usr/bin/open", args: ["#{appdir}/Updater.app"], sudo: false
     end
   end
