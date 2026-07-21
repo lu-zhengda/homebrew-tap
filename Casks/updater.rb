@@ -2,10 +2,10 @@
 cask "updater" do
   app "Updater.app"
 
-  version "0.16.0"
+  version "0.16.1"
 
   on_macos do
-    sha256 "4ccbc9f46fee3b7274e0ef85461fdafe8bb9a5fb61231021ecfecaa1372ee5ab"
+    sha256 "290ec2d9db154e30fd44a5b0e4771367862a2b4c6324b6345f88e21efcfa4220"
     url "https://github.com/lu-zhengda/updater/releases/download/v#{version}/updater_#{version}_darwin.tar.gz"
   end
 
