@@ -20,7 +20,7 @@ cask "updater" do
       "mas",
     ]
 
-  binary "updater"
+  binary "#{appdir}/Updater.app/Contents/MacOS/updater"
   bash_completion "completions/updater.bash"
   fish_completion "completions/updater.fish"
   zsh_completion "completions/updater.zsh"
