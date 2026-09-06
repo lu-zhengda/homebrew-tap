@@ -34,7 +34,7 @@ cask "claude-mem-viz" do
 
   binary "claude-mem-viz"
 
-  postflight do
+  postflight_steps do
     if OS.mac?
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/claude-mem-viz"]
     end

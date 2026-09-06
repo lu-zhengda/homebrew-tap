@@ -25,7 +25,7 @@ cask "updater" do
   fish_completion "completions/updater.fish"
   zsh_completion "completions/updater.zsh"
 
-  preflight do
+  preflight_steps do
     if OS.mac?
       # Replace a manually-placed copy (e.g. from the release tarball);
       # Homebrew refuses to overwrite an app it did not install.
@@ -33,7 +33,7 @@ cask "updater" do
     end
   end
 
-  postflight do
+  postflight_steps do
     if OS.mac?
       # The release is Developer ID signed and notarized; preserve
       # quarantine so Gatekeeper can enforce that trust decision.

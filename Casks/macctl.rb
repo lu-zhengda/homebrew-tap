@@ -25,7 +25,7 @@ cask "macctl" do
     end
   end
 
-  postflight do
+  postflight_steps do
     if OS.mac?
       system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/macctl"]
     end
