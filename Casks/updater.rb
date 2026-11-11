@@ -3,10 +3,10 @@ cask "updater" do
   depends_on macos: :ventura
   app "Updater.app"
 
-  version "0.22.0"
+  version "0.23.0"
 
   on_macos do
-    sha256 "0d632c4be547f1369fa903c9192868dbb3a51d7bb5ec9507799775e9c1fef6ab"
+    sha256 "73db0b698ecbd21724c54a49ca7c18d75a8f6e4512cd04bc599f2fcd764a0908"
     url "https://github.com/lu-zhengda/updater/releases/download/v#{version}/updater_#{version}_darwin.tar.gz"
   end
 
