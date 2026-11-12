@@ -3,10 +3,10 @@ cask "updater" do
   depends_on macos: :tahoe
   app "Updater.app"
 
-  version "0.24.0"
+  version "0.24.2"
 
   on_macos do
-    sha256 "b6654e359369e110c3a132a843b0a6c5685dde8c0e9fa92888977ddf3fd27f07"
+    sha256 "dd2c5063562038470a31002eb202763fbe29083893fedbf5a98253b7cad757bd"
     url "https://github.com/lu-zhengda/updater/releases/download/v#{version}/updater_#{version}_darwin.tar.gz"
   end
 
