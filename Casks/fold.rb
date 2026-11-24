@@ -1,6 +1,6 @@
 cask "fold" do
-  version "1.1.0"
-  sha256 "37cc6f5b4cca9f9daa3d6250e2e20ac19a2fb61b45145d6ec0b91e32947f05b8"
+  version "1.2.0"
+  sha256 "8f26f8a50d8648f8759068f0a8eda532e82a7063ccd21a3d330e521a7e27555c"
 
   url "https://github.com/lu-zhengda/fold/releases/download/v#{version}/Fold-#{version}.dmg"
   name "Fold"
@@ -12,6 +12,7 @@ cask "fold" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: :sonoma
 
   app "Fold.app"
