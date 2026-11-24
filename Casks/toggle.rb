@@ -1,8 +1,8 @@
 cask "toggle" do
-  version "1.5.1"
-  sha256 "d3a4f11549b0fcf28cae2875ad170889b36c88e2776c384f812d8294504b96a2"
+  version "1.5.2"
+  sha256 "1953463885b75c4aad11c2e5090e7d8de149c0706465e369a5fb7ac3d75626d0"
 
-  url "https://github.com/lu-zhengda/toggle/releases/download/v#{version}/Toggle.zip"
+  url "https://github.com/lu-zhengda/toggle/releases/download/v#{version}/Toggle-#{version}.dmg"
   name "Toggle"
   desc "Menu bar app for one-tap system switches"
   homepage "https://github.com/lu-zhengda/toggle"
