@@ -1,6 +1,6 @@
 cask "fold" do
-  version "1.2.2"
-  sha256 "49865ee3084657c17e74a200b448533f95c50b36a51429867680669d35484f88"
+  version "2.0.0"
+  sha256 "08b5f289cf95838621606a9e63e26b9474f6815e5ffdf5cd1131dee494b366f8"
 
   url "https://github.com/lu-zhengda/fold/releases/download/v#{version}/Fold-#{version}.dmg"
   name "Fold"
@@ -13,7 +13,7 @@ cask "fold" do
   end
 
   auto_updates true
-  depends_on macos: :sonoma
+  depends_on macos: :tahoe
 
   app "Fold.app"
 
