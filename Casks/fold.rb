@@ -1,6 +1,6 @@
 cask "fold" do
-  version "1.2.1"
-  sha256 "8d17fe31e56a937f75baeb3ddc792e67bb5df4977d1b00419bb19bbdd830e2d2"
+  version "1.2.2"
+  sha256 "49865ee3084657c17e74a200b448533f95c50b36a51429867680669d35484f88"
 
   url "https://github.com/lu-zhengda/fold/releases/download/v#{version}/Fold-#{version}.dmg"
   name "Fold"
